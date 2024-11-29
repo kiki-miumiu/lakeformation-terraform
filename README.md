@@ -5,6 +5,7 @@
 cd terraform
 terraform init --backend-config=env/dev01_SD000_001.conf
 terraform plan --var-file=env/dev01_SD000_001.tfvars
+terraform destroy --var-file=env/dev01_SD000_001.tfvars
 ```
 
 ## Configuration
