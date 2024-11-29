@@ -16,10 +16,9 @@ variable "lakeformation_domain_tag" {
 
 locals {
   lakeformation_tags = {
-    environment = ["dev", "test", "stg", "nft", "preprod", "prod"]
+    environment    = ["dev", "test", "npd", "ppd", "prod", "prd"]
     domain         = var.lakeformation_domain_tag
     classification = ["NC", "HIP", "CUS", "CNF", "GRP", "PUB"]
-    temp           = ["true", "false"]
     assettype      = ["dataasset", "dataproduct"]
   }
 }
